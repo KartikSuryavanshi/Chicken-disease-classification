@@ -1,10 +1,14 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnnClassifier import logger
+from cnn_image_classification import logger
 import json
 import joblib
-from ensure import ensure_annotations
+try:
+    from ensure import ensure_annotations
+except Exception:  # Fallback for Python 3.12+ incompatibilities in ensure
+    def ensure_annotations(func):
+        return func
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
