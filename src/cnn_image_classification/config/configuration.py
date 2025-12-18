@@ -2,11 +2,7 @@ from cnn_image_classification.constants import *
 import os
 from pathlib import Path
 from cnn_image_classification.utils.common import read_yaml, create_directories
-from cnn_image_classification.entity.config_entity import (DataIngestionConfig,
-                                                PrepareBaseModelConfig,
-                                                PrepareCallbacksConfig,
-                                                TrainingConfig,
-                                                EvaluationConfig)
+from cnn_image_classification.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbacksConfig,TrainingConfig, EvaluationConfig)
 
 
 
